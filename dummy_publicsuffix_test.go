@@ -2,12 +2,14 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package cookiejar_test
+package pcookiejar_test
 
-import "net/http/cookiejar"
+import (
+	"github.com/carted/pcookiejar"
+)
 
 type dummypsl struct {
-	List cookiejar.PublicSuffixList
+	List pcookiejar.PublicSuffixList
 }
 
 func (dummypsl) PublicSuffix(domain string) string {

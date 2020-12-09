@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // Package cookiejar implements an in-memory RFC 6265-compliant http.CookieJar.
-package cookiejar
+package pcookiejar
 
 import (
 	"errors"

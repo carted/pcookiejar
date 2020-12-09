@@ -2,13 +2,13 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package cookiejar_test
+package pcookiejar_test
 
 import (
 	"fmt"
+	"github.com/carted/pcookiejar"
 	"log"
 	"net/http"
-	"net/http/cookiejar"
 	"net/http/httptest"
 	"net/url"
 )
@@ -31,7 +31,7 @@ func ExampleNew() {
 	}
 
 	// All users of cookiejar should import "golang.org/x/net/publicsuffix"
-	jar, err := cookiejar.New(&cookiejar.Options{PublicSuffixList: publicsuffix.List})
+	jar, err := pcookiejar.New(&pcookiejar.Options{PublicSuffixList: publicsuffix.List})
 	if err != nil {
 		log.Fatal(err)
 	}

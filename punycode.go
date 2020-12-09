@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package cookiejar
+package pcookiejar
 
 // This file implements the Punycode algorithm from RFC 3492.
 

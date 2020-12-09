@@ -1,3 +1,3 @@
-module github.com/carted/persistent-cookiejar
+module github.com/carted/pcookiejar
 
 go 1.15
